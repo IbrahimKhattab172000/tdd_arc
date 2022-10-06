@@ -20,7 +20,6 @@ class Params extends Equatable {
   final int number;
 
   const Params(this.number);
-
   @override
   List<Object?> get props => [number];
 }

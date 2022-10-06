@@ -4,5 +4,5 @@ import 'package:tdd_arc/features/number_trivia/domain/entities/number_trivia.dar
 
 abstract class NumberTriviaRespositoy {
   Future<Either<Failures, NumberTrivia>>? getConcreteNumberTrivia(int number);
-  Future<Either<Failures, NumberTrivia>> getRandomNumberTrivia();
+  Future<Either<Failures, NumberTrivia>>? getRandomNumberTrivia();
 }

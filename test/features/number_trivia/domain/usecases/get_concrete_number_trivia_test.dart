@@ -21,12 +21,16 @@ void main() {
   test(
     "Should get trivia for the number from the repository",
     () async {
-      //arrange
+      //*arrange
       when(mockNumberTriviaRepository!.getConcreteNumberTrivia(1))
           .thenAnswer((_) async => Right(tNumberTrivia));
-      //act
+      //*act
+
       final result = await usecase!.call(Params(tNumber));
-      //assert
+      //*usecase = usecase.call
+      //// final result = await usecase!();
+
+      //*assert
       expect(result, Right(tNumberTrivia));
       verify(mockNumberTriviaRepository!.getConcreteNumberTrivia(tNumber));
       verifyNoMoreInteractions(mockNumberTriviaRepository);

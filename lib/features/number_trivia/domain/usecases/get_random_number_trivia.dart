@@ -1,6 +1,5 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:dartz/dartz.dart';
-import 'package:equatable/equatable.dart';
 
 import 'package:tdd_arc/core/errors/failures.dart';
 import 'package:tdd_arc/core/usecases/usecases.dart';

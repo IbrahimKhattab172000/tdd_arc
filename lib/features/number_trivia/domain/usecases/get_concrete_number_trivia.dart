@@ -1,9 +1,9 @@
 import 'package:dartz/dartz.dart';
 import 'package:equatable/equatable.dart';
-import 'package:tdd_arc/core/errors/failures.dart';
-import 'package:tdd_arc/core/usecases/usecases.dart';
-import 'package:tdd_arc/features/number_trivia/domain/entities/number_trivia.dart';
-import 'package:tdd_arc/features/number_trivia/domain/repositories/number_trivia_repository.dart';
+import '../../../../core/errors/failures.dart';
+import '../../../../core/usecases/usecases.dart';
+import '../entities/number_trivia.dart';
+import '../repositories/number_trivia_repository.dart';
 
 class GetConcreteNumberTrivia implements UseCase<NumberTrivia, Params> {
   final NumberTriviaRespositoy respositoy;

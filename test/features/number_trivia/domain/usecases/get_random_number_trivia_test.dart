@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:dartz/dartz.dart';
 import 'package:mockito/mockito.dart';
 import 'package:tdd_arc/core/usecases/usecases.dart';
